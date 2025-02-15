@@ -1,0 +1,20 @@
+name: Auto Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Set branch utama Anda
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Deploy ke GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # Branch tempat file akan di-deploy
+          folder: .  # Deploy semua file dari root repository
