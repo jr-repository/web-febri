@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Uren - Car Accessories Shop HTML Template</title>
+    <title>Febri Carwash</title>
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -929,9 +929,34 @@
         <!-- Uren's Breadcrumb Area End Here -->
         <!-- Begin Contact Main Page Area -->
         <div class="contact-main-page">
-            <div class="container-fluid">
-                <div id="google-map"></div>
+            <h2>Lokasi Saya</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15826.49600308719!2d109.94029475009245!3d-7.395959390863032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7aa1cf35ce6705%3A0xce2b55597794bcd!2sWironalan!5e0!3m2!1sid!2sid!4v1739613666901!5m2!1sid!2sid" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
+            
+            <style>
+                h2 {
+                    text-align: center;
+                    color: #333;
+                }
+                .map-container {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                }
+                iframe {
+                    width: 80%;
+                    height: 450px;
+                    border: 0;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+            </style>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-5 offset-lg-1 col-md-12 order-1 order-lg-2">
@@ -1193,7 +1218,7 @@
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
     <!-- Begin Uren's Google Map Area -->
-    <script src="https://maps.google.com/maps/api/js?sensor=false&amp;libraries=geometry&amp;v=3.22&amp;key=AIzaSyChs2QWiAhnzz0a4OEhzqCXwx_qA9ST_lE"></script>
+    <!-- <script src="https://maps.google.com/maps/api/js?sensor=false&amp;libraries=geometry&amp;v=3.22&amp;key=AIzaSyChs2QWiAhnzz0a4OEhzqCXwx_qA9ST_lE"></script>
 
     <script>
         // When the window has finished loading create our google map below
@@ -1384,7 +1409,7 @@
                 animation: google.maps.Animation.BOUNCE
             });
         }
-    </script>
+    </script> -->
     <!-- Uren's Google Map Area End Here -->
 
 </body>
